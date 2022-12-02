@@ -4,5 +4,5 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
-  exclude: ["dist/*"],
+  testMatch: ["**/*.(spec|test).ts"],
 };

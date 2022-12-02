@@ -8,5 +8,6 @@
     "outDir": "dist"
   },
   "lib": ["es2015"],
-  "include": ["src", "index.ts"]
+  "include": ["src", "index.ts"],
+  "exclude": ["*.test.ts"]
 }
