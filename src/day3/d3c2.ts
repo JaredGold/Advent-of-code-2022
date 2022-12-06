@@ -1,7 +1,7 @@
 import { readFileToArray } from "../../utils/readFileToArray";
 
 export const d3c2 = (input?: string[]) => {
-  console.log("You have selected Day 3 Challenge 1");
+  console.log("You have selected Day 3 Challenge 2");
   const values = input ? input : readFileToArray("input", 3);
   const sharedArr = [];
 
