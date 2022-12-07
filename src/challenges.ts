@@ -10,6 +10,8 @@ import { d5c1 } from "./day5/d5c1";
 import { d5c2 } from "./day5/d5c2";
 import { d6c1 } from "./day6/d6c1";
 import { d6c2 } from "./day6/d6c2";
+import { d7c1 } from "./day7/d7c1";
+import { d7c2 } from "./day7/d7c2";
 
 const challenges = {
   d1c1: d1c1,
@@ -24,6 +26,8 @@ const challenges = {
   d5c2: d5c2,
   d6c1: d6c1,
   d6c2: d6c2,
+  d7c1: d7c1,
+  d7c2: d7c2,
 };
 
 export default challenges;
