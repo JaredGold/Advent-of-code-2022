@@ -1,7 +1,7 @@
 import { d7c1 } from "./d7c1";
 
 describe("d7c1", () => {
-  it("gets the correst result", () => {
+  it("gets the correct result", () => {
     const data = [
       "$ cd /",
       "$ ls",

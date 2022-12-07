@@ -21,8 +21,15 @@ export const d7c2 = (input?: string[]) => {
       switch (cmd2) {
         // go to top level
         case "/":
-          path = path.slice(0, 1);
-          currentDirectory = path[0];
+          for (let i = path.length; i !== 1; i--) {
+            // set parent path size to your size plus parents
+            path[path.length - 2].size =
+              currentDirectory.size + path[path.length - 2].size;
+            // remove your current path
+            path.pop();
+            // reset the current path to end of array
+            currentDirectory = path[path.length - 1];
+          }
           break;
         // go back one
         case "..":
@@ -49,15 +56,19 @@ export const d7c2 = (input?: string[]) => {
     }
   });
 
+  while (currentDirectory !== topDirectory) {
+    path[path.length - 2].size =
+      path[path.length - 2].size + currentDirectory.size;
+    path.pop();
+    currentDirectory = path[path.length - 1];
+  }
+
   const sizesToRemove = [];
-
   const unusedSpace = 70000000 - fileTree.size;
-
   const neededSpace = 30000000 - unusedSpace;
 
   const getSmallestValueToRemove = (dir: Dir) => {
     if (dir.size >= neededSpace) {
-      console.log(dir.size);
       sizesToRemove.push(dir.size);
     }
     if (dir.files) {
