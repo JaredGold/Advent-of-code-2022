@@ -14,6 +14,17 @@ import { d7c1 } from "./day7/d7c1";
 import { d7c2 } from "./day7/d7c2";
 import { d8c1 } from "./day8/d8c1";
 import { d8c2 } from "./day8/d8c2";
+import { d9c1 } from "./day9/d9c1";
+import { d9c2 } from "./day9/d9c2";
+import { d10c1 } from "./day10/d10c1";
+import { d10c2 } from "./day10/d10c2";
+import { d11c1 } from "./day11/d11c1";
+import { d11c2 } from "./day11/d11c2";
+import { d12c1 } from "./day12/d12c1";
+import { d12c2 } from "./day12/d12c2";
+import { d13c1 } from "./day13/d13c1";
+import { d13c2 } from "./day13/d13c2";
+
 const challenges = {
   d1c1: d1c1,
   d1c2: d1c2,
@@ -31,6 +42,16 @@ const challenges = {
   d7c2: d7c2,
   d8c1: d8c1,
   d8c2: d8c2,
+  d9c1: d9c1,
+  d9c2: d9c2,
+  d10c1: d10c1,
+  d10c2: d10c2,
+  d11c1: d11c1,
+  d11c2: d11c2,
+  d12c1: d12c1,
+  d12c2: d12c2,
+  d13c1: d13c1,
+  d13c2: d13c2,
 };
 
 export default challenges;
