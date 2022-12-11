@@ -47,8 +47,6 @@ export const d9c1 = (input?: string[]) => {
       if (headOneLeft) tailPosition.x--;
       if (headOneRight) tailPosition.x++;
     }
-    console.log("head", headPosition);
-    console.log("tail", tailPosition);
   };
 
   rows.forEach((row) => {
@@ -96,8 +94,6 @@ export const d9c1 = (input?: string[]) => {
   // then iterate over each step for y, if the position is 1 away from head or same position don't do anything
   // if the position is two away from head add the new position to an object.
   // finally check the length of the Object.keys(traveledLocations)
-
-  console.log(traveledLocations);
 
   let answer = Object.keys(traveledLocations).length;
 

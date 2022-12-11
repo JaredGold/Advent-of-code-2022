@@ -104,8 +104,6 @@ export const d9c2 = (input?: string[]) => {
     }
   });
 
-  console.log(traveledLocations);
-
   let answer = Object.keys(traveledLocations).length;
 
   return answer;

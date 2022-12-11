@@ -1,11 +1,10 @@
 import { d10c1 } from "./d10c1";
+import { testInput } from "./testInput";
 
 describe("d10c1", () => {
   it("gets the correst result", () => {
-    const data = [];
+    const result = d10c1(testInput);
 
-    const result = d10c1(data);
-
-    expect(true).toStrictEqual(true);
+    expect(result).toStrictEqual(13140);
   });
 });
