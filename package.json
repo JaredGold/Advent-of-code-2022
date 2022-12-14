@@ -29,6 +29,7 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
+    "bignumber.js": "^9.1.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.8.0"
